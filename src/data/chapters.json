@@ -1,0 +1,130 @@
+[
+  {
+    "id": "c01",
+    "num": "01",
+    "title": "THE PROBLEM",
+    "tagline": "Urban blindspots, delayed incident triage, and stationary sensor limits",
+    "framingQuestion": "WHY DOES IT EXIST",
+    "scope": "MARK 01 BASELINE CONTEXT"
+  },
+  {
+    "id": "c02",
+    "num": "02",
+    "title": "THE VISION",
+    "tagline": "Persistent autonomous aerial overwatch for dynamic metropolitan corridors",
+    "framingQuestion": "WHAT IS THE END STATE",
+    "scope": "FUTURE ARCHITECTURE — LONG-TERM GOAL"
+  },
+  {
+    "id": "c03",
+    "num": "03",
+    "title": "JATAYU CONCEPT",
+    "tagline": "Autonomous loop: Patrol → Observe → Detect → Analyze → Classify → Alert → Review",
+    "framingQuestion": "WHAT IS IT",
+    "scope": "SYSTEM ARCHITECTURE"
+  },
+  {
+    "id": "c04",
+    "num": "04",
+    "title": "MARK 01 SCOPE",
+    "tagline": "The single-drone proof-of-concept pipeline with explicit operational boundaries",
+    "framingQuestion": "WHAT ARE WE BUILDING NOW",
+    "scope": "PROTOTYPE SCOPE (MARK 01)"
+  },
+  {
+    "id": "c05",
+    "num": "05",
+    "title": "DRONE ANATOMY",
+    "tagline": "Physical airframe, avionics, sensor pod, and power distribution hierarchy",
+    "framingQuestion": "WHAT ARE THE PHYSICAL PARTS",
+    "scope": "PROTOTYPE AIRFRAME"
+  },
+  {
+    "id": "c06",
+    "num": "06",
+    "title": "EXPLODED SUBSYSTEMS",
+    "tagline": "Interactive mechanical explosion and isolated engineering specifications",
+    "framingQuestion": "HOW ARE THEY ENGINEERED",
+    "scope": "SUBSYSTEM DRILLDOWN"
+  },
+  {
+    "id": "c07",
+    "num": "07",
+    "title": "REASSEMBLY & INTEGRATION",
+    "tagline": "Harmonizing vibration isolation, RF separation, and center-of-gravity balance",
+    "framingQuestion": "HOW DO THEY WORK TOGETHER",
+    "scope": "PHYSICAL INTEGRATION"
+  },
+  {
+    "id": "c08",
+    "num": "08",
+    "title": "PATROL NAVIGATION",
+    "tagline": "Deterministic waypoint splines, corridor scan patterns, and fail-safe return",
+    "framingQuestion": "HOW DOES IT FLY",
+    "scope": "FLIGHT PATH LOGIC"
+  },
+  {
+    "id": "c09",
+    "num": "09",
+    "title": "EDGE AI VISION",
+    "tagline": "On-board TensorRT inference, deep multi-object tracking, and sensor stabilization",
+    "framingQuestion": "HOW DOES IT SEE",
+    "scope": "EDGE COMPUTATION"
+  },
+  {
+    "id": "c10",
+    "num": "10",
+    "title": "EVENT DETECTION",
+    "tagline": "Mathematical pattern thresholds: L1 persistence, L2 kinematics, L3 thermal bloom",
+    "framingQuestion": "HOW DOES IT CLASSIFY",
+    "scope": "ANOMALY DETECTION"
+  },
+  {
+    "id": "c11",
+    "num": "11",
+    "title": "GEOSPATIAL INTELLIGENCE",
+    "tagline": "Gimbal raycasting, flat-earth DEM projection, and coordinate error bounds",
+    "framingQuestion": "HOW DOES IT LOCALIZE",
+    "scope": "GEO-LOCALIZATION"
+  },
+  {
+    "id": "c12",
+    "num": "12",
+    "title": "GROUND CONTROL STATION",
+    "tagline": "Human-in-the-loop operator console, alert dispatch queue, and manual override",
+    "framingQuestion": "HOW DOES A HUMAN OPERATE IT",
+    "scope": "GCS SOFTWARE"
+  },
+  {
+    "id": "c13",
+    "num": "13",
+    "title": "SYSTEM ARCHITECTURE",
+    "tagline": "End-to-end telemetry link, edge-to-ground data packet serialization, and security",
+    "framingQuestion": "HOW DOES DATA FLOW",
+    "scope": "INFRASTRUCTURE"
+  },
+  {
+    "id": "c14",
+    "num": "14",
+    "title": "TESTING & VALIDATION",
+    "tagline": "Three-phase progressive validation: Bench → Tethered Cage → Controlled Sector",
+    "framingQuestion": "HOW DO WE PROVE IT WORKS",
+    "scope": "VALIDATION REGIME"
+  },
+  {
+    "id": "c15",
+    "num": "15",
+    "title": "PROJECT ROADMAP & TEAM",
+    "tagline": "Four-quarter milestone schedule, budget categories, and technical roles",
+    "framingQuestion": "HOW WILL IT BE DELIVERED",
+    "scope": "EXECUTION PLAN"
+  },
+  {
+    "id": "c16",
+    "num": "16",
+    "title": "LIMITATIONS & FUTURE EVOLUTION",
+    "tagline": "Mark 01 real-world boundaries, drone-dock swaps, and autonomous swarm grids",
+    "framingQuestion": "WHERE DOES IT GO NEXT",
+    "scope": "FUTURE ARCHITECTURE"
+  }
+]

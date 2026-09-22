@@ -1,0 +1,98 @@
+{
+  "levels": [
+    {
+      "code": "L0",
+      "name": "NOMINAL PATROL",
+      "color": "var(--green)",
+      "badge": "NOMINAL",
+      "description": "Routine scheduled waypoint transit. Sensor optical flow within baseline parameters. No anomalies flagged.",
+      "actionRequired": "Continuous telemetry logging, regular heartbeats to Ground Control Station."
+    },
+    {
+      "code": "L1",
+      "name": "PERSISTENCE ANOMALY / CROWD ACCUMULATION",
+      "color": "var(--cyan)",
+      "badge": "MONITORING",
+      "description": "Measurable pedestrian or vehicular cluster count exceeds historical temporal density threshold (+42% over baseline for >180s).",
+      "actionRequired": "Automated camera gimbal hold on coordinate centroid; alert queued in GCS console for human review.",
+      "evidenceFields": [
+        "Bounding box spatial density: 2.8 units/10m²",
+        "Velocity vector dispersion: < 0.4 m/s (stationary cluster)",
+        "Persistence duration: 210s observed"
+      ]
+    },
+    {
+      "code": "L2",
+      "name": "POSSIBLE VEHICULAR INCIDENT",
+      "color": "var(--amber)",
+      "badge": "WARNING",
+      "description": "Abrupt deceleration vector followed by perpendicular traffic lane occlusion and spatial stagnation.",
+      "actionRequired": "GCS alert notification with optical crop and geo-coordinates; human operator confirms or dismisses.",
+      "evidenceFields": [
+        "Kinematic deceleration signature: -8.4 m/s² observed",
+        "Occlusion metric: 2 lanes obstructed on Ring Road Outer Sector",
+        "Confidence score: 0.81 [MODEL TARGET]"
+      ]
+    },
+    {
+      "code": "L3",
+      "name": "CRITICAL THERMAL / COMBUSTION SIGNATURE",
+      "color": "var(--red)",
+      "badge": "CRITICAL",
+      "description": "Localized rapid IR temperature delta > 120°C above ambient baseline, accompanied by optical luminance bloom and smoke plume dispersal.",
+      "actionRequired": "Immediate high-priority audible tone at Ground Control Station; automated coordinate dispatch package generated for human authorization.",
+      "evidenceFields": [
+        "Thermal differential (LWIR microbolometer): +142°C delta",
+        "Spatial dispersion rate: 1.6 m²/s plume growth",
+        "Classification: Possible Structure/Vehicle Thermal Incident"
+      ]
+    }
+  ],
+  "simulatedEvents": [
+    {
+      "id": "EVT-8041",
+      "timestamp": "10:49:02Z",
+      "level": "L1",
+      "title": "Pedestrian Stagnation Cluster",
+      "category": "Crowd Density Anomaly",
+      "location": "North Transit Plaza (12.9734°N, 77.5982°E)",
+      "confidence": "0.84 [MODEL TARGET]",
+      "status": "PENDING HUMAN REVIEW",
+      "metrics": {
+        "trackedObjects": 38,
+        "stationaryRatio": "82%",
+        "duration": "4m 12s"
+      }
+    },
+    {
+      "id": "EVT-8042",
+      "timestamp": "10:50:31Z",
+      "level": "L2",
+      "title": "Possible Vehicular Collision",
+      "category": "Kinematic & Occlusion Anomaly",
+      "location": "Corridor 4 Junction (12.9758°N, 77.6015°E)",
+      "confidence": "0.79 [MODEL TARGET]",
+      "status": "OPERATOR VERIFIED — DISPATCHED",
+      "metrics": {
+        "impactDecel": "9.1 m/s²",
+        "laneObstruction": "Lane 1 & 2 Blocked",
+        "backupLength": "180 m [ESTIMATED]"
+      }
+    },
+    {
+      "id": "EVT-8043",
+      "timestamp": "10:51:14Z",
+      "level": "L3",
+      "title": "Thermal Anomaly & Visible Smoke",
+      "category": "Thermal & Aerosol Signature",
+      "location": "Industrial Periphery Lot B (12.9782°N, 77.6050°E)",
+      "confidence": "0.91 [MODEL TARGET]",
+      "status": "CRITICAL ESCALATION QUEUE",
+      "metrics": {
+        "peakTemp": "184°C [LWIR CALIBRATED]",
+        "plumeArea": "46 m²",
+        "spreadVector": "038° @ 3.2 m/s"
+      }
+    }
+  ]
+}

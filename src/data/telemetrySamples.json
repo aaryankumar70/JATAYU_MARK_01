@@ -1,0 +1,37 @@
+{
+  "prototype": {
+    "designation": "JATAYU MARK 01 (PROTOTYPE)",
+    "status": "FLIGHT-TEST CONFIGURATION",
+    "classification": "UNCLASSIFIED / PROPOSAL BRIEFING",
+    "callsign": "JATAYU-01-EXP",
+    "sector": "SECTOR-B7 (CORRIDOR ALFA)",
+    "label": "SIMULATED / FLIGHT TEST TARGETS"
+  },
+  "realOrTargetSpecs": {
+    "allUpWeight_kg": "3.25 kg [TARGET]",
+    "payloadCapacity_g": "650 g [MEASURED BENCH]",
+    "operationalRadius_km": "3.5 km [TARGET / LINE-OF-SIGHT]",
+    "targetFlightEndurance_min": "24 min [BENCH TEST / 6S 6500mAh]",
+    "cruiseSpeed_ms": "12.0 m/s [PLANNED PATROL]",
+    "maxWindResistance_ms": "10.5 m/s (20.4 kts) [CALCULATED CEILING]",
+    "opticalSensor": "Sony 1/2.3\" 4K CMOS (84° HFOV) [BENCH EVALUATED]",
+    "thermalSensor": "640x512 uncooled VOx microbolometer (30Hz) [BENCH EVALUATED]",
+    "edgeCompute": "NVIDIA Jetson Orin Nano (40 TOPS INT8 sparse) [ACTIVE HARDWARE]",
+    "rfDatalink": "915 MHz FHSS Telemetry + 5.8 GHz COFDM Video [LAB BENCH TESTED]"
+  },
+  "simulatedTelemetryStream": [
+    { "timestamp": "10:48:12.420Z", "alt_m": 45.2, "spd_ms": 11.8, "battery_v": 24.1, "battery_pct": 86, "hdg_deg": 142.6, "sats": 18, "hdop": 0.68, "link_rssi_dbm": -64, "mode": "AUTO_PATROL", "status": "NOMINAL" },
+    { "timestamp": "10:48:13.420Z", "alt_m": 45.5, "spd_ms": 12.0, "battery_v": 24.0, "battery_pct": 86, "hdg_deg": 143.1, "sats": 18, "hdop": 0.68, "link_rssi_dbm": -65, "mode": "AUTO_PATROL", "status": "NOMINAL" },
+    { "timestamp": "10:48:14.420Z", "alt_m": 45.3, "spd_ms": 12.1, "battery_v": 23.9, "battery_pct": 85, "hdg_deg": 143.8, "sats": 18, "hdop": 0.66, "link_rssi_dbm": -64, "mode": "AUTO_PATROL", "status": "NOMINAL" },
+    { "timestamp": "10:48:15.420Z", "alt_m": 45.0, "spd_ms": 11.9, "battery_v": 23.9, "battery_pct": 85, "hdg_deg": 144.2, "sats": 19, "hdop": 0.65, "link_rssi_dbm": -63, "mode": "AUTO_PATROL", "status": "NOMINAL" },
+    { "timestamp": "10:48:16.420Z", "alt_m": 45.1, "spd_ms": 12.0, "battery_v": 23.8, "battery_pct": 85, "hdg_deg": 144.5, "sats": 19, "hdop": 0.65, "link_rssi_dbm": -63, "mode": "AUTO_PATROL", "status": "NOMINAL" },
+    { "timestamp": "10:48:17.420Z", "alt_m": 45.4, "spd_ms": 12.2, "battery_v": 23.7, "battery_pct": 84, "hdg_deg": 145.0, "sats": 19, "hdop": 0.65, "link_rssi_dbm": -64, "mode": "AUTO_PATROL", "status": "NOMINAL" }
+  ],
+  "patrolWaypoints": [
+    { "id": "WP-01", "lat": 12.9716, "lng": 77.5946, "alt": 45.0, "action": "TRANSIT", "eta_s": 0 },
+    { "id": "WP-02", "lat": 12.9734, "lng": 77.5982, "alt": 45.0, "action": "OBSERVE_CORRIDOR", "eta_s": 42 },
+    { "id": "WP-03", "lat": 12.9758, "lng": 77.6015, "alt": 48.0, "action": "HIGHWAY_JUNCTION", "eta_s": 88 },
+    { "id": "WP-04", "lat": 12.9782, "lng": 77.6050, "alt": 50.0, "action": "TRANSIT_ORBIT", "eta_s": 134 },
+    { "id": "WP-05", "lat": 12.9745, "lng": 77.6080, "alt": 45.0, "action": "SECTOR_RETURN", "eta_s": 180 }
+  ]
+}

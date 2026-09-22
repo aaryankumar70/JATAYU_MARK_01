@@ -1,0 +1,6 @@
+{
+  "name": "Jatayu — Mark 01 Architectural Aerospace Showcase",
+  "description": "An architectural exhibition and aerospace engineering presentation of Jatayu Mark 01: Autonomous Aerial Intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

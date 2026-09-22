@@ -1,0 +1,150 @@
+{
+  "prototypeLabel": "JATAYU MARK 01 PROTOTYPE CONFIGURATION",
+  "disclaimer": "Physical prototype baseline architecture. Later production iterations evaluate mission-specific payload, compute, and airframe upgrades.",
+  "nodes": [
+    {
+      "id": "propellers",
+      "title": "1045 PROPELLER",
+      "subtitle": "10 × 4.5 in · CW / CCW",
+      "category": "Aerodynamics",
+      "subsystem": "Thrust Generation",
+      "specLines": [
+        "10 × 4.5 in pitch glass-reinforced nylon composite",
+        "Counter-rotating pairs (2 CW, 2 CCW) for torque balance",
+        "Direct-drive center hub with M6 self-locking acorn nuts",
+        "Target static thrust: ~850g per axis at full throttle"
+      ],
+      "origin": { "pos": [0, 0.12, 0], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.85, 0], "rot": [0, 0, 0] },
+      "cameraFocus": { "pos": [0.85, 0.65, 0.95], "target": [0.45, 0.4, 0.45] }
+    },
+    {
+      "id": "motors",
+      "title": "A2212 1000KV BLDC",
+      "subtitle": "4 × Propulsion Motors",
+      "category": "Propulsion",
+      "subsystem": "Rotational Drive",
+      "specLines": [
+        "1000 RPM/V brushless outrunner architecture",
+        "Operates on 3S (11.1V) nominal voltage",
+        "28 × 27mm bell with cross-drilled cooling vents",
+        "3.17mm ground steel output shaft"
+      ],
+      "origin": { "pos": [0, 0.04, 0], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.35, 0], "rot": [0, 0, 0] },
+      "cameraFocus": { "pos": [0.85, 0.45, 0.9], "target": [0.48, 0.25, 0.48] }
+    },
+    {
+      "id": "esc",
+      "title": "30A ESC",
+      "subtitle": "Motor Speed Control",
+      "category": "Power Distribution",
+      "subsystem": "Commutation & Speed",
+      "specLines": [
+        "30A continuous current rating with transient burst headroom",
+        "PWM throttle signal input compatible with Pixhawk servo rail",
+        "5V 2A integrated Linear BEC for low-power auxiliary rails",
+        "Secured directly along arm truss for active prop-wash cooling"
+      ],
+      "origin": { "pos": [0, -0.01, 0], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.12, 0], "rot": [0, 0, 0] },
+      "cameraFocus": { "pos": [0.65, 0.25, 0.75], "target": [0.3, 0.1, 0.3] }
+    },
+    {
+      "id": "frame",
+      "title": "F450 CLASS FRAME",
+      "subtitle": "Quadcopter Chassis",
+      "category": "Structure",
+      "subsystem": "Airframe",
+      "specLines": [
+        "450mm diagonal motor-to-motor wheelbase",
+        "Dual glass-fiber PCB plates with integrated power bus",
+        "Ultra-durable molded polyamide-nylon truss arms",
+        "Standardized M3 mounting grid for avionics and payloads"
+      ],
+      "origin": { "pos": [0, 0, 0], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0, 0], "rot": [0, 0, 0] },
+      "cameraFocus": { "pos": [0.95, 0.75, 1.3], "target": [0, 0, 0] }
+    },
+    {
+      "id": "battery",
+      "title": "3S LiPo",
+      "subtitle": "~5200mAh Power Pack",
+      "category": "Energy",
+      "subsystem": "Flight Power",
+      "specLines": [
+        "11.1V nominal voltage (3S1P lithium-polymer chemistry)",
+        "~5200mAh rated capacity providing prototype flight test baseline",
+        "High-current polarized XT60 main power connector",
+        "Mounted below lower chassis plate via dual woven Velcro straps"
+      ],
+      "origin": { "pos": [0, -0.08, -0.02], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, -0.65, -0.3], "rot": [-0.1, 0, 0] },
+      "cameraFocus": { "pos": [0.6, -0.45, 0.95], "target": [0, -0.4, -0.1] }
+    },
+    {
+      "id": "flight_controller",
+      "title": "PIXHAWK 2.4.8-CLASS",
+      "subtitle": "ArduPilot Compatible",
+      "category": "Avionics",
+      "subsystem": "Flight Dynamics & Autopilot",
+      "specLines": [
+        "32-bit ARM Cortex-M4 MCU running open-source ArduPilot",
+        "Internal vibration-isolated 3-axis gyro and accelerometer",
+        "Failsafe auto return-to-launch (RTL) on signal loss or low voltage",
+        "Dedicated MAVLink telemetry, GPS, I2C and RC input ports"
+      ],
+      "origin": { "pos": [0, 0.05, -0.04], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.45, -0.12], "rot": [0.05, 0, 0] },
+      "cameraFocus": { "pos": [0.35, 0.45, 0.85], "target": [0, 0.25, -0.05] }
+    },
+    {
+      "id": "gps",
+      "title": "u-blox NEO-M8N",
+      "subtitle": "GNSS Position",
+      "category": "Navigation",
+      "subsystem": "Spatial Reference",
+      "specLines": [
+        "Multi-constellation GNSS reception (GPS, GLONASS, Galileo)",
+        "Internal digital compass / magnetometer for heading hold",
+        "Elevated folding mast isolates compass from motor EMI",
+        "Provides geographic coordinate provenance for incident events"
+      ],
+      "origin": { "pos": [0, 0.16, -0.18], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.88, -0.3], "rot": [0, 0, 0] },
+      "cameraFocus": { "pos": [0.35, 0.8, 0.95], "target": [0, 0.65, -0.2] }
+    },
+    {
+      "id": "camera",
+      "title": "Raspberry Pi Camera Module 3",
+      "subtitle": "Vision Input",
+      "category": "Sensor Payload",
+      "subsystem": "Optical Perception",
+      "specLines": [
+        "12-megapixel Sony IMX708 back-illuminated CMOS sensor",
+        "Integrated motor-driven phase detection autofocus (PDAF)",
+        "High-bandwidth CSI-2 ribbon interface directly to Pi 5",
+        "Forward-angled front chassis mount for aerial patrol coverage"
+      ],
+      "origin": { "pos": [0, -0.05, 0.22], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, -0.12, 0.72], "rot": [0.1, 0, 0] },
+      "cameraFocus": { "pos": [0.2, -0.1, 0.9], "target": [0, -0.15, 0.3] }
+    },
+    {
+      "id": "companion_computer",
+      "title": "Raspberry Pi 5 8GB",
+      "subtitle": "Edge Compute",
+      "category": "Processing",
+      "subsystem": "Onboard Intelligence",
+      "specLines": [
+        "Broadcom BCM2712 quad-core 64-bit Arm Cortex-A76 @ 2.4GHz",
+        "8GB high-speed LPDDR4X SDRAM for local computer vision frames",
+        "Official active cooler (aluminum fin heatsink + blower fan)",
+        "Executes edge neural detection and MAVLink telemetry pipeline"
+      ],
+      "origin": { "pos": [0, 0.08, 0.08], "rot": [0, 0, 0] },
+      "exploded": { "pos": [0, 0.62, 0.22], "rot": [0.05, 0, 0] },
+      "cameraFocus": { "pos": [0.3, 0.55, 0.9], "target": [0, 0.38, 0.08] }
+    }
+  ]
+}

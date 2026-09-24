@@ -1,10 +1,4 @@
-/**
- * ============================================================================
- * JATAYU — MARK 01
- * Architectural Exhibition & Aerospace Engineering Showcase
- * Rebuilt strictly around the physical drone centerpiece
- * ============================================================================
- */
+
 
 import React, { useEffect, useRef } from "react";
 import Lenis from "lenis";
